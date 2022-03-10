@@ -4,6 +4,7 @@ import Spinner from '../spinner/spinner';
 import ErrorMessage from '../errorMessage/errorMessage';
 import Skeleton from '../skeleton/Skeleton';
 import './charInfo.scss';
+import PropTypes from 'prop-types';
 
 class CharInfo extends Component {
 
@@ -124,6 +125,10 @@ const View = ({char}) => {
                 </ul>
         </>
     )
+}
+
+CharInfo.propTypes = {
+    charId: PropTypes.number
 }
 
 export default CharInfo;
